@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .parent{
+            background: grey;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:row-reverse;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+        .child{
+            padding: 15px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+        <div class="child">child 4</div>
+        <div class="child">child 5</div>
+        <div class="child">child 6</div>
+        <div class="child">child 7</div>
+        <div class="child">child 8</div>
+        <div class="child">child 9</div>
+        <div class="child">child 10</div>
+        <div class="child">child 11</div>
+        <div class="child">child 12</div>
+    </div>
+</body>
+</html>
