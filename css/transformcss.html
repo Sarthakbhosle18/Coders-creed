@@ -11,7 +11,7 @@
         }
         body{
             height: 100vh;
-            display: flex;
+            display: grid;
             justify-content: center;
             align-items: center;
         }
@@ -21,18 +21,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: 0.9s;
+            transition: 1.9s;
         }
         .child:hover{
-            transform: rotate(360deg);
+            /* transform: rotateX(360deg); */
             /* transform: scale(1.5); */
             /* transform: skew(30deg,30deg); */
-            /* transform: translate(100px,100px); */
-            /* transform: matrix(1.5,0,0,1.5,0,0); */
+            transform: translateY(120px) perspective(200px) rotateX(360deg) scale(1.5) ;
+            /* transform: matrix(0,0,0,0,100,100); */
+            /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
         }
     </style>
 </head>
 <body>
-    <div class="child"><img src="bugati chiron.jpg" alt=""></div>
+    <div class="child"><img src="bugati chiron.jpg" style=" border-radius: 25px;" alt=""></div>
 </body>
 </html>
