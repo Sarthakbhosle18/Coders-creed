@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gride</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .random{
+            background-color: gray;
+        display: grid;
+        height: 160%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: reapet(5, 1fr);
+        }
+        .clear{
+            padding: 5%;
+        border: 2px solid red;
+        }
+        .clear1{
+            grid-area: 1/1/1/4;
+        }
+        .clear2{
+            grid-area: 2/3/2/4;
+        }
+        .clear3{
+            background-color: gray;
+        display: grid;
+        height: 160%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: reapet(4, 1fr);
+        }
+        .clear4{
+            grid-area: 3/1/4/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="random">
+        <div class="clear clear1">header</div>
+        <div class="clear clear2">sidebar</div>
+        <div class="clear clear3">
+            <div>main</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+            <div class="A">item</div>
+        </div>
+        <div class="clear clear4">footer</div>
+    </div>
+</body>
+</html>

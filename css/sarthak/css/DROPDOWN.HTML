@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: gray;
+      }
+      li {
+        padding: 10px;
+      }
+      li:hover {
+        background-color: green;
+      }
+      .main li:hover .dropdown {
+        position: absolute;
+        display: block;
+        background-color: gray;
+        margin-left: -10px;
+        margin-top: 10px;
+      }
+      li {
+        list-style: none;
+      }
+      .dropdown {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="main">
+      <li>Home</li>
+      <li>
+        About
+        <div class="dropdown">
+          <ul>
+            <li>faculty</li>
+            <li>Contact</li>
+            <li>Admission</li>
+            <li>Admin</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        Course
+        <div class="dropdown">
+          <ul>
+            <li>Basic</li>
+            <li>tally</li>
+            <li>Web design</li>
+          </ul>
+        </div>
+      </li>
+      <li>Contact</li>
+    </ul>
+  </body>
+</html>
