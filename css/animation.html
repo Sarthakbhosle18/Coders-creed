@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .ball {
+        height: 150px;
+        width: 150px;
+        background: red;
+        position: relative;
+        animation: slide 3s 1s infinite linear alternate;     /*speed,delay,loop,motion,*/   
+      }
+      /*key frame type */
+      @keyframes slide {
+        from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 200px;
+            }
+            /*percentage type*/
+        0%,100%{
+            top: 0;left: 0;
+        }
+        25%{
+            top: 0;left: 200px;
+
+        }
+        50%{
+            top: 200px;left: 200px;
+            border-radius: 50%;
+        }
+        75%{
+            top: 200px;left: 0;
+        }
+            }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+  </body>
+</html>
