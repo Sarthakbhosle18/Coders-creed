@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        background-color: #444;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .item {
+        padding: 10px;
+        color: #fff;
+      }
+      @media screen and (max-width: 700px) {
+        .container {
+          background: gold;
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .container {
+          background: red;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">List 1</div>
+      <div class="item">List 2</div>
+      <div class="item">List 3</div>
+      <div class="item">List 4</div>
+      <div class="item">List 5</div>
+      <div class="item">List 6</div>
+      <div class="item">List 7</div>
+      <div class="item">List 8</div>
+      <div class="item">List 9</div>
+    </div>
+  </body>
+</html>
