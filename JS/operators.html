@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    
+    <script>
+
+        //arithmatic operators
+        //+ - / * % ** (exponentiation)
+        let num1 =10, num2 = 5;
+        console.log(num1 + num2); //15
+        console.log(num1 - num2); //5
+        console.log(num1 * num2); //50
+        console.log(num1 / num2); //2
+        console.log(num1 % num2); //0
+        console.log(num1 ** num2); //100000
+
+        //assignment operators
+        // += -= *= /= %= **=
+        num1 += 5;
+        num1 -= 5;
+        console.log(num1)
+        //relation / conditional operators
+        // == != === > < >= <=
+        console.log(num1 > num2); //true
+        console.log (num1 < num2); //false
+        console.log (num1 == "10");//true
+        console.log (num1 === "10");//false
+        console.log (num1 != 10);//false
+        console.log  (num1 >= num2);//true
+
+        //logical operators
+        // &&(and) ||(or) !(not)
+        /*
+            AND
+            1   2   res
+            T   T   T
+            T   F   F
+            F   T   F
+            F   F   F
+        */
+       console.log ( "AND",num1 > num2 && num1 < num2 == 15); //false
+       /*
+            OR
+        1   2   res
+        T   T   T
+        T   F   T
+        F   T   T
+        F   F   F
+       */
+      console.log ( "OR",num1 > num2 || num1 < num2 ==15) //true
+      /*
+        NOT
+        1   res
+        T   F
+        F   T
+        */
+       console.log ( "NOT",!(num1 && num2 ==5)) //false
+
+    </script>
+
+</body>
+</html>
