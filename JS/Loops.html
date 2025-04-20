@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      // loops
+      // for loops
+
+      // for(inital;condition;inc/dec){code}
+      for (i = 0; i < 10; i++) {
+        if (i == 5) {
+          continue;
+        }
+        console.log(i);
+      }
+
+      // while loop
+      //inital
+      // while(condn){code inc/dec}
+
+      name = prompt("Enter name :");
+      attempt = 5;
+      while (name != "prasad") {
+        attempt--;
+        if (attempt <= 0) {
+          break;
+        }
+        name = prompt("Enter name " + attempt + " attempt left");
+      }
+      console.log("Welcome Prasad");
+
+      // do while
+      // do{code inc/dec}while(condn)
+      i = 0;
+      do{
+        console.log(i)
+      }while(i > 10)
+    </script>
+  </body>
+</html>
