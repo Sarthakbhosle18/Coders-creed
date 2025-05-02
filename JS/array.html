@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+
+        //array
+        let name=["sarthak","kaustubh","prasad","viraj"]
+        console.log(name)
+        //indexing
+        console.log(name[0])
+        //add
+        name.push("niraj")
+        name.unshift("suraj")
+        name.splice(3,0,"jay")
+        console.log(name)
+
+        //remove
+        name.pop()
+        name.shift()
+        name.splice(2,1)
+        console.log(name)
+
+        //update
+
+        name[0]="vijay"
+        console.log(name)
+
+        //display
+        for(let i=0; i<name.length;i++){
+            console.log(name[i])
+        }
+    </script>
+
+</body>
+</html>
