@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    
+    <script>
+
+        let arr = [10,60,8,77,96,45,78,36,100] 
+        
+        let names = ["prasad","sahil","rahul","raj"]
+
+        // arr.fill("HELLO",2)
+        // arr.sort(function(a,b){return a -b})
+        // arr.reverse()
+        // console.log(arr.concat(names))
+        // arr.find((value,index)=>{
+        //     if(value == 77){
+        //         console.log(arr.indexOf(77));
+                
+        //     }
+        // })
+        console.log(arr.indexOf(77))
+        console.log(arr.includes(45))
+        arr.map((value,index)=>{
+            return  document.write(`<li> ${value}  </li`)
+        })
+
+        let evenNum = arr.filter((value,index) =>{
+            if(value % 2 ==0){return value}
+        })
+        console.log(evenNum)
+        
+
+    </script>
+
+</body>
+</html>
