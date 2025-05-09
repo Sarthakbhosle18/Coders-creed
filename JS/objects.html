@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+
+        let person = {
+            name : "prasad",
+            age : 21,
+            gender : "male",
+            isMarried : false,
+            subjects : {english : 21,maths:65,hindi:86}
+        }
+
+        console.log(person)
+
+        // add
+
+        person['color'] = "black"
+        console.log(person)
+      
+        // remove
+        delete person['isMarried']
+        console.log(person)
+
+        // update
+        person['age'] = 25
+        console.log(person)
+
+        //display
+        console.log(person['age'])
+        console.log(person.color)
+
+        // check
+        console.log(person.hasOwnProperty('age'))
+
+        console.log(Object.keys(person))
+        console.log(Object.values(person))
+        console.log(Object.entries(person))
+        
+        // console.table(person)
+        keys = Object.keys(person);
+        for(i=0;i<keys.length;i++){
+            console.log(keys[i] + " " +JSON.stringify(person[keys[i]]))
+        }
+
+</script>
+
+</body>
+</html>
