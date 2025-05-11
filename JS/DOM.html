@@ -10,12 +10,13 @@
     <input type="text" id="textinput">
     <button onclick="formsubmit()">submit</button>
     <div id="output"></div>
-
+    <div>
     <form onsubmit="getFormData(event)" id="Loginform" action="arrays.html">
         <input type="text" name="uname"  placeholder="Username">
         <input type="password" name="pwd"  placeholder="Password">
         <button type="submit">Login</button>
     </form>
+</div>
 
     <script>
 
@@ -27,7 +28,7 @@
         }
 
         let form = document.getElementById('Loginform')
-        function getFormData(e){
+        function getFormData(e)){
             e.preventDefault()
             console.log(form.uname.value)            
             console.log(form.pwd.value)            

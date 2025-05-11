@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 6 Tourist Places in India</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .place-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .place-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .place-info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .place-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .explore-button {
+            display: inline-block;
+            background-color: aqua;
+            color: black;
+            padding: 8px 16px;
+            margin-top: 8px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .explore-button:hover {
+            background-color: #00cccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Top 6 Tourist Places in India</h1>
+
+    <div class="place-list">
+
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal">
+            <div class="place-info">
+                <div class="place-name">Taj Mahal</div>
+                <div class="location">Agra, Uttar Pradesh</div>
+                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="explore-button" target="_blank">Explore</a>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/HAWAMAHAL_at_pink_city.jpg/640px-HAWAMAHAL_at_pink_city.jpg" alt="Jaipur">
+            <div class="place-info">
+                <div class="place-name">Jaipur - The Pink City</div>
+                <div class="location">Rajasthan</div>
+                <a href="https://en.wikipedia.org/wiki/Jaipur" class="explore-button" target="_blank">Explore</a>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Great_Gateway_of_India_Mumbai.jpg/640px-Great_Gateway_of_India_Mumbai.jpg" alt="Gateway of India Mumbai">
+            <div class="place-info">
+                <div class="place-name">Gateway of India Mumbai</div>
+                <div class="location">Mumbai</div>
+                <a href="https://en.wikipedia.org/wiki/Gateway_of_India" class="explore-button" target="_blank">Explore</a>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/India_Gate_1_%28New_Delhi%29.jpg/640px-India_Gate_1_%28New_Delhi%29.jpg" alt="India Gate">
+            <div class="place-info">
+                <div class="place-name">India Gate of Delhi</div>
+                <div class="location">New Delhi</div>
+                <a href="https://en.wikipedia.org/wiki/India_Gate" class="explore-button" target="_blank">Explore</a>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Akal_Takht_and_Harmandir_Sahib%2C_Amritsar%2C_Punjab%2C_India.jpg/640px-Akal_Takht_and_Harmandir_Sahib%2C_Amritsar%2C_Punjab%2C_India.jpg" alt="Golden Temple">
+            <div class="place-info">
+                <div class="place-name">Golden Temple, Amritsar</div>
+                <div class="location">Amritsar, Punjab</div>
+                <a href="https://en.wikipedia.org/wiki/Golden_Temple" class="explore-button" target="_blank">Explore</a>
+            </div>
+        </div>
+
+        <div class="place-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Indus_Valley_near_Leh.jpg/640px-Indus_Valley_near_Leh.jpg" alt="Leh Ladakh">
+            <div class="place-info">
+                <div class="place-name">Leh-Ladakh</div>
+                <div class="location">Jammu & Kashmir</div>
+                <a href="https://en.wikipedia.org/wiki/Leh" class="explore-button" target="_blank">Explore</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
