@@ -10,7 +10,18 @@
     <button onclick="addcard()">Click me</button>
     <script>
         let Card;
-        
+        let i2= document.getElementById('i2')
+
+        function addCard(){
+              card = document.createElement('div')
+            card.classList.add('card')
+            card.innerHTML = i2.value
+            card.innerHTML += "<button>X</button>"
+            card.querySelector('button').onclick = ()=>{
+                document.body.removeChild(card)
+            }
+            document.body.appendChild(card)
+        }
 
 
     </script>
