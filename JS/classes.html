@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    
+    <script>
+
+        class Car{
+            constructor(name,model){
+                this.name = name;
+                this.model = model;
+                this.fulelStatus = 500;
+                this.speed = 0;
+                this.isStarted = false;
+                console.log("Car Created");
+            }
+
+            startCar(){
+                if(!this.isStarted){
+                    this.isStarted = true;
+                    console.log("Car Started");
+                } else {
+                    console.log("Car is already started");
+                }
+            }
+
+            increaseSpeed(){
+                if(this.isStarted){
+                    this.speed += 10;
+                    console.log(`Speed increased to ${this.speed}`);
+                } else {
+                    console.log("Start the car first to increase speed");
+                }
+            }
+
+            decreaseSpeed(){
+                if(this.isStarted && this.speed > 0){
+                    this.speed -= 10;
+                    console.log(`Speed decreased to ${this.speed}`);
+                } else {
+                    console.log("Car is either not started or speed is already zero");
+                }
+            }
+
+            fuleStatus(){
+                if(this.isStarted && this.speed > 0)
+                {
+                    this.fuleState -= 100;
+                }
+                {
+                    console.log("Fule is low, please refuel");
+            }
+            {
+                console.log("Fule status checked");
+            }
+        }
+    }
+
+        let c1 = new Car();
+        c1.startCar();
+        c1.startCar();
+        c1.increaseSpeed();
+        c1.increaseSpeed();
+        c1.increaseSpeed();
+        c1.fuleStatus();
+        c1.decreaseSpeed();
+        c1.decreaseSpeed();
+
+        let c2 = new Car("volvo",789);
+        c2.startCar();
+        c2.startCar();
+        c2.increaseSpeed();
+        c2.increaseSpeed();
+        c2.increaseSpeed();
+        c2.increaseSpeed();
+        c2.increaseSpeed();
+        c2.decreaseSpeed();
+        c2.decreaseSpeed();
+        c2.decreaseSpeed();
+    </script>
+
+</body>
+</html>
