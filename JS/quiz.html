@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <h1 id="questionContainer"></h1>
+    <button id="btn1" onclick="checkAnswer(0)">btn 1</button>
+    <button id="btn2" onclick="checkAnswer(1)">btn 2</button>
+    <button id="btn3" onclick="checkAnswer(2)">btn 3</button>
+    <button id="btn4" onclick="checkAnswer(3)">btn 4</button>
+    <button id="resetbtn" onclick="window.location.reload()" style="display: none;">Restart</button>
+
+    
+    <script>
+
+        let quizQuestions = [
+            {
+                "question" :"what is Color of apple ?",
+                "options" : ["red","green","blue","orange"],
+                "correctAns" : "red"
+            },
+            {
+                "question" :"what is Color of banana ?",
+                "options" : ["red","green","yellow","orange"],
+                "correctAns" : "yellow"
+            },
+            {
+                "question" :"what is Color of mango ?",
+                "options" : ["red","green","blue","orange"],
+                "correctAns" : "green"
+            }
+        ]
+
+        let currentIndex = 0
+            let points = 0;
+        function startQuiz(){
+            showQuestion(currentIndex)
+        }
+
+        function showQuestion(n){
+            document.getElementById('questionContainer').innerHTML = quizQuestions[n].question
+            document.getElementById('btn1').innerHTML = quizQuestions[n].options[0]
+            document.getElementById('btn2').innerHTML = quizQuestions[n].options[1]
+            document.getElementById('btn3').innerHTML = quizQuestions[n].options[2]
+            document.getElementById('btn4').innerHTML = quizQuestions[n].options[3]
+        }
+
+        function checkAnswer(n){
+            let selectedOption = quizQuestions[currentIndex].options[n]
+            console.log(selectedOption);
+            if(selectedOption == quizQuestions[currentIndex].correctAns){
+                console.log("Correct Guess");  
+                points++;              
+            }else{
+                console.log("Wrong Guess");                
+            }
+            currentIndex ++;
+            if(currentIndex <= quizQuestions.length - 1){
+                showQuestion(currentIndex)
+            }else{
+                reset()
+            }
+        }
+
+        function reset(){
+             document.getElementById('questionContainer').innerHTML = `Your Points ${points}/${quizQuestions.length}`
+            document.getElementById('btn1').style.display ="none"
+            document.getElementById('btn2').style.display ="none"
+            document.getElementById('btn3').style.display ="none"
+            document.getElementById('btn4').style.display ="none"
+            document.getElementById('resetbtn').style.display ="block"
+        }
+
+        startQuiz()
+    </script>
+
+</body>
+</html>
