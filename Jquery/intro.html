@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <script src="jquery-4.0.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <button class="btn btn-primary btn1">Hide</button>
+    <button class="btn btn-primary btn2">Show</button>
+    <button class="btn btn-primary btn3">Toggle</button>
+
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ex dolor, minima reprehenderit voluptatum adipisci, praesentium porro sit laudantium, debitis dolore. Perspiciatis asperiores sed pariatur recusandae non. Tempore, in qui?
+        Velit odio labore assumenda molestias perferendis nulla mollitia in! Laboriosam, sunt quod, neque quibusdam ratione consequatur ea minus, tempore ad numquam est blanditiis! Modi dicta accusantium suscipit voluptatibus quaerat animi.
+        Eligendi minus recusandae assumenda voluptatibus incidunt distinctio est, hic repudiandae beatae quae, expedita iste accusantium consequatur vitae odio fugiat! Doloremque earum deserunt nihil harum maiores nam quod accusantium, rerum iste.
+        Quidem fugiat deleniti voluptates pariatur, vel rerum blanditiis voluptatem dolore at? Ipsam repellendus accusantium molestias voluptate maiores ipsum minus exercitationem odio, amet nisi modi at. Deserunt consequatur quisquam nulla veritatis.
+        Doloribus ratione magni ducimus voluptatibus obcaecati ad corporis consequuntur explicabo, officiis, sapiente saepe eum, qui sed? Quis laboriosam recusandae voluptates, unde asperiores architecto quam necessitatibus officiis ea blanditiis corporis dignissimos!
+    </div>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('.btn1').click(function(){
+                console.log("Hide Btn clicked");    
+                $('div').hide(2000)
+            })
+
+            $('.btn2').click(function(){
+                console.log("Show Btn clicked");    
+                $('div').show(2000)
+            })
+
+            $('.btn3').click(function(){
+                console.log("Toggle Btn clicked");    
+                $('div').toggle(2000)
+            })
+            
+
+        })
+
+    </script>
+
+
+</body>
+</html>
