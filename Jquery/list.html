@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>link 1</li>
+        <li>link 2</li>
+        <li>link 3</li>
+    </ul>
+
+    <button class="appendBtn">Append</button>
+    <button class="prependBtn">Prepend</button>
+    <button class="afterBtn">After</button>
+    <button class="beforeBtn">Before</button>
+
+    <button class="removeBtn">Remove</button>
+    <button class="emptyBtn">Empty</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".appendBtn").click(function(){
+                $("ul").append("<li> APPEND </li>")
+            });
+            $(".prependBtn").click(function(){
+                $("ul").prepend("<li> PREPEND </li>")
+            });
+            $(".afterBtn").click(function(){
+                $("ul").after("<li> AFTER </li>")
+            });
+            $(".beforeBtn").click(function(){
+                $("ul").before("<li> BEFORE </li>")
+            });
+            $(".removeBtn").click(function(){
+                $("ul").remove()
+            });
+            $(".emptyBtn").click(function(){
+                $("ul").empty()
+            });
+        });
+    </script>
+</body>
+</html>
