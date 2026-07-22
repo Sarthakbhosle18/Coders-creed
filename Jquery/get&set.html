@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    
+    <input type="text" value="user">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis culpa veniam iure rerum nam, enim, iusto id nostrum repellat eveniet quisquam. Incidunt est maiores quo praesentium inventore, aliquam esse et.</p>
+    <button>click me</button>
+
+    <script>
+        
+        $(document).ready(function(){
+
+            //getter
+            console.log($('input').val())
+            console.log($('p').text())
+            console.log($('p').html())
+            console.log($('input').attr('type'))
+
+            //setter
+            $('button').click(function(){
+                $('input').val("jay")
+                $('p').text("<h1>Heading1</h1>")
+                $('p').html("<h1>Heading1</h1>")
+                $('input').attr("type",'password')
+            })
+
+        })
+
+    </script>
+
+</body>
+</html>
